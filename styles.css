@@ -1,0 +1,173 @@
+@charset "UTF-8";
+
+/*tablet:768px*/
+/*phone: 480px*/
+@media (max-width:500px) {
+	body {
+	overflow-x: hidden;
+	}
+	div.bookatest {
+	background-size:353px;
+	height: 80px;	
+	}
+	.topnavlinks{
+	position: absolute;
+	right: 0;
+	height: 30vh;
+	top: 10vh;
+	background-color:#5d5d5d;
+	display: flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	transform: translateX(100%);
+	width: 30%;
+	transition: transform 0.6s ease-in;
+	border-radius:20px;
+	}
+	button.bookBut {
+	margin-top:1%;
+	}
+	ul.topnavelinks li{
+	opacity:0;
+	}
+	div.mobilenav{
+	display:block;
+	cursor:pointer;
+	}
+
+}
+
+
+
+
+
+html {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: #4A403A;
+}
+
+nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 9vh;
+	background-color: #5d4954;
+	font-family: 'Poppins', sans-serif;
+	border-radius: 5px;
+	margin:0;
+}
+
+
+.logo {
+	color: rgb(256,256,256);
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 22px;
+}
+
+.topnavlinks {
+	
+	justify-content: space-around;
+	width: 60%;
+	padding:0;
+	align-content: right;
+}
+
+.topnavlinks a {
+	color: rgb(256,256,256);
+	text-decoration: none;
+	letter-spacing: 2px;
+	font-weight: bold;
+	font-size: 13px;
+	margin: 5px;
+}
+
+.topnavlinks li {
+	list-style: none;
+
+	float:left;
+}
+
+.mobilenav{
+	display:none;
+}
+
+.mobilenav div {
+	width: 30px;
+	height: 3px;
+	background-color: rgb(256,256,256);
+	margin: 5px;
+}
+
+.nav-active {
+	transform: translateX(0%);
+}
+
+.pageContent {
+	display: grid;
+	background-color: black;
+	margin: 2%;
+	border-radius: 10px;
+}
+
+.bookatest {
+
+	background-image: url(bookatestdrive.jpg);
+	background-size: fixed;
+	width: 99%;
+	height: 300px;
+	border-top: 3px solid;
+	border-bottom: 3px solid;
+	border-radius:3px;
+	color: #FFC069;
+	background-repeat: no-repeat;
+	margin: auto;
+	background-attachment: fixed;
+ 	background-position: center;
+ 	position: relative;
+	
+}
+
+.bookBut {
+	border-radius: 10px;
+	background-color: #FFC069;
+	color: black;
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+	float: left;
+	
+}
+
+#welcome {
+	color: white;
+	margin-left: 2%;
+}
+
+
+table {
+	border: 1px solid white;
+	border-color:white;
+	color: white;
+	margin: 0 auto;
+	margin-top: 15px;
+}
+td {
+	text-align:center;
+	margin: 10px;
+	border: 1px solid white;
+}
+
+div #welcome {
+	color: rgb(256,256,256);
+	font-family: 'Poppins', sans-serif;
+}
+
+footer{
+	display: flex;
+	background-color: #5d5d5d;
+	border-radius: 5px;
+	
+}
